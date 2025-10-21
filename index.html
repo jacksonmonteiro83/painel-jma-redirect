@@ -2,50 +2,33 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecionando para o Painel JMA</title>
+  <title>Dashboard JMA Consultoria</title>
   <style>
     body {
-      background-color: #1f4e79;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    a {
-      display: inline-block;
-      background-color: #ffffff;
+      background-color: white;
       color: #1f4e79;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      margin-top: 20px;
-      transition: 0.3s;
+      font-family: sans-serif;
+      margin: 0;
+      text-align: center;
     }
-    a:hover {
-      background-color: #e5e5e5;
+    h2 {
+      margin-top: 40px;
+    }
+    iframe {
+      width: 95%;
+      height: 800px;
+      border: 2px solid #1f4e79;
+      border-radius: 12px;
+      margin: 30px auto;
     }
   </style>
-  <script>
-    // Tenta redirecionar automaticamente
-    window.onload = function() {
-      setTimeout(function() {
-        window.location.href = "https://huggingface.co/spaces/baldomero83/painel-python-v2/";
-      }, 1000); // espera 1 segundo
-    };
-  </script>
 </head>
 <body>
-  <h2>Carregando o Painel JMA...</h2>
-  <p>Se o redirecionamento não acontecer automaticamente, clique abaixo:</p>
-  <a href="https://huggingface.co/spaces/baldomero83/painel-python-v2/" target="_blank">
-    Acessar o Painel JMA
-  </a>
+  <h2>Dashboard em Python — Painel JMA</h2>
+  <iframe 
+    src="https://huggingface.co/spaces/baldomero83/painel-python-v2/"
+    allowfullscreen
+  ></iframe>
+  <p style="color:#666; font-size:14px;">Se não carregar, <a href="https://huggingface.co/spaces/baldomero83/painel-python-v2/" target="_blank">clique aqui</a> para abrir o painel diretamente.</p>
 </body>
 </html>
